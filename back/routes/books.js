@@ -9,4 +9,5 @@ router.post('/register', registerUser);
 router.post('/login', loginUser);
 router.post("/verif", authenticateToken);
 
+
 module.exports = router;

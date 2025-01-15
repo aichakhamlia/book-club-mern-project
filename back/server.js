@@ -15,10 +15,6 @@ app.use(express.json()); // Parses JSON bodies
 app.use(express.urlencoded({ extended: true })); // Parses URL-encoded bodies
 
 
-
-
-
-
 // Initialize Express app
 
 const PORT = process.env.PORT || 5000;

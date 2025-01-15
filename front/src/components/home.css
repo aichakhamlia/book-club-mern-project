@@ -1,0 +1,165 @@
+
+/* home.css */
+
+/* Hero section */
+.hero-section {
+  background-color: #e4c8b7; /* Beige clair pour l'arrière-plan */
+  background-image: url('C:\Users\khaml\Desktop\book club\book1.png'); /* Remplacez par le chemin de votre image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* L'image est centrée */
+  height: 70vh; /* Hauteur de la fenêtre */
+  color: #fff;
+  padding: 0; /* Retirer le padding ici */
+  text-align: center;
+  display: flex; /* Pour centrer le contenu avec Flexbox */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  text-align: center; /* Assure que le texte est centré dans .hero-content */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #5c4031; /* Un marron plus doux */
+  animation: fadeIn 2s ease-out;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #5c4031; /* Couleur marron plus foncé */
+  animation: fadeIn 2s ease-out 0.5s;
+}
+
+.cta-button {
+  background-color: #a07d56; /* Marron chaud pour le bouton */
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 2s ease-out 1s;
+}
+
+.cta-button:hover {
+  background-color: #8f6a47; /* Légèrement plus foncé au survol */
+}
+
+/* About section */
+.about-section {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  height: 50vh; /* Hauteur de la section ajustée pour occuper 50% de la fenêtre */
+  padding: 40px 20px;
+  background-color: #f1e4d4; /* Beige très clair */
+  text-align: center; /* Centre le texte à l'intérieur des éléments */
+  animation: fadeIn 1.5s ease-out; /* Animation de l'apparition de la section */
+}
+
+.about-section h2 {
+  font-size: 2.5rem; /* Augmente la taille du titre */
+  color: #6c4a36; /* Marron chaud */
+  margin-bottom: 20px;
+  animation: slideUp 1s ease-out; /* Animation du titre (glissement vers le haut) */
+}
+
+.about-section p {
+  font-size: 1.25rem; /* Augmente la taille du texte du paragraphe */
+  color: #777; /* Gris clair */
+  line-height: 1.6;
+  max-width: 800px; /* Limite la largeur du texte pour une meilleure lisibilité */
+  animation: slideUp 1.5s ease-out 0.3s; /* Animation du texte (glissement vers le haut avec un délai) */
+}
+
+/* Feature section */
+.features-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6c4a36; /* Marron chaud */
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.feature-card h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #6c4a36; /* Marron chaud */
+}
+
+.feature-card p {
+  color: #777;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background-color: #e4c8b7;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  color: #6c4a36; /* Marron chaud */
+  font-size: 1rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation du texte qui glisse vers le haut */
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

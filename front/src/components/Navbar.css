@@ -1,0 +1,73 @@
+
+
+
+/* Global styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Espace entre le titre et les liens */
+  align-items: center;
+  background-color: #f1e4d4; /* Beif1e4d4ge clair très doux */
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title aligned to the left */
+.navbar h1 {
+  color: #5c4031; /* Un marron doux et chaleureux pour le titre */
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0;
+  flex-grow: 1;
+  text-align: left; /* Aligne le titre à gauche */
+}
+
+/* Container for the links (left and right) */
+.links {
+  display: flex;
+  gap: 20px;
+ 
+}
+
+/* Common styles for buttons (links) */
+.links a {
+  color: #5c4031; /* Marron doux pour le texte des boutons */
+  background-color: transparent; /* Fond transparent */
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none; /* Enlève les bordures */
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Animation effect on hover */
+.links a:hover {
+  background-color: #8f6a47; /* Marron foncé au survol */
+  color: #fff; /* Texte blanc au survol */
+  transform: scale(1.1); /* Légère augmentation de la taille */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+}

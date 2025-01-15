@@ -1,0 +1,95 @@
+
+/* Conteneur principal de la page */
+.login-page-container {
+  background-image: url('C:\Users\khaml\Desktop\book club\front\src\assets\images\book3.webp'); /* Chemin de l'image de fond */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Cadre transparent animé */
+.form-wrapper {
+  background: rgba(255, 255, 255, 0.8); /* Transparence */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Titre */
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Formulaire */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Champ du formulaire */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Bouton de connexion */
+.submit-button {
+  padding: 10px 20px;
+  background-color: #a6764c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #4cae4c;
+}
+
+/* Message d'erreur */
+.error-message {
+  color: #d9534f;
+  font-size: 0.9em;
+  margin-top: -10px;
+}

@@ -1,0 +1,72 @@
+/* src/components/BestRecom.css */
+
+/* Conteneur principal de la page */
+.best-recom-page {
+    background-color: #f8f4e6; /* Beige clair */
+    color: #3d3d3d; /* Gris foncé pour le texte */
+    font-family: 'Arial', sans-serif;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .best-recom-page h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6f4f1f; /* Marron foncé */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .best-recom-page p {
+    font-size: 1.2rem;
+    color: #6f4f1f;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .best-recom-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+  }
+  
+  .book-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 280px;
+    text-align: left;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-card h3 {
+    font-size: 1.6rem;
+    color: #6f4f1f; /* Marron pour le titre */
+    margin-bottom: 10px;
+  }
+  
+  .book-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 8px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
